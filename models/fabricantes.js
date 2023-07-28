@@ -18,4 +18,11 @@ const Fabricante = database.define('fabricantes', {
   }
 );
 
+// Adicionar 1:N entre Fabricante e Produto
+Fabricante.hasMany(database.models.Produto, {
+  foreignKey: 'fabricanteId', //Chave estrangeira que será criada na tabela de produtos
+  onDelete: 'CASCADE', // Define o comportamento de exclusão em cascata
+  onUpdate: 'CASCADE', // Define o comportamento de atualização em cascata
+});
+
 module.exports = Fabricante;

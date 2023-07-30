@@ -13,10 +13,10 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('produtos', [
-      { nome: 'Produto 1', fabricanteId: 1, createdAt: new Date(), updatedAt: new Date() },
-      { nome: 'Produto 2', fabricanteId: 1, createdAt: new Date(), updatedAt: new Date() },
-      { nome: 'Produto 3', fabricanteId: 2, createdAt: new Date(), updatedAt: new Date() },
-      { nome: 'Produto 4', fabricanteId: 2, createdAt: new Date(), updatedAt: new Date() },
+      { nome: 'Produto 1', fabricantesId: 1, createdAt: new Date(), updatedAt: new Date() },
+      { nome: 'Produto 2', fabricantesId: 1, createdAt: new Date(), updatedAt: new Date() },
+      { nome: 'Produto 3', fabricantesId: 2, createdAt: new Date(), updatedAt: new Date() },
+      { nome: 'Produto 4', fabricantesId: 2, createdAt: new Date(), updatedAt: new Date() },
     ]);
   },
 
